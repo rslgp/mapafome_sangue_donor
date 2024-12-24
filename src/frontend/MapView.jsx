@@ -6,7 +6,7 @@ import { Container, Typography, FormControl, InputLabel, Select, MenuItem, Box, 
 import getDateFormat from './util/date_formatter';
 
 const CENTER = [-8.0671132, -34.8766719];
-const SERVER_ENDPOINT = "http://localhost:5000/mapdata";
+const SERVER_ENDPOINT = `${import.meta.env.VITE_API_BACKEND_ENDPOINT}/mapdata`;
 const MAP_INDEX = 0;
 
 delete L.Icon.Default.prototype._getIconUrl;
