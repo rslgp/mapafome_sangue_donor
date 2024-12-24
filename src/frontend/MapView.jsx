@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { Container, Typography, FormControl, InputLabel, Select, MenuItem, Box, Button, Checkbox, ListItemText } from '@mui/material';
+import { Container, Typography, FormControl, InputLabel, Select, MenuItem, Box, Checkbox, ListItemText } from '@mui/material';
 import getDateFormat from './util/date_formatter';
 
 const CENTER = [-8.0671132, -34.8766719];
