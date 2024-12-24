@@ -5,6 +5,7 @@ import L from 'leaflet';
 
 const CENTER = [-8.0671132, -34.8766719];
 const SERVER_ENDPOINT = "http://localhost:5000/mapdata";
+const MAP_INDEX = 0;
 
 // Fix Leaflet icon issue
 delete L.Icon.Default.prototype._getIconUrl;
@@ -42,7 +43,7 @@ const loadFromServer = async () => {
         const { rows } = data.result;
         const markers = rows.map(r => {
             return {
-                position: r[6].split(","),
+                position: r[MAP_INDEX].split(","),
                 popupContent: popupContentMake(r)
             };
         });
